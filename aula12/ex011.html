@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de idade para votar</title>
+    <style>
+        p, #idade{
+            display: inline-block
+        }
+        #res{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Você é obrigado a votar? Saiba aqui!</h1>
+        <label for="idade"><p>Insira sua idade:</p></label>
+        <input type="number" name="idade" id="tidade">
+        <input type="button" value="Descubra" onclick="rodar()">
+        <div id="res"></div>
+    </main>
+
+
+    <script>
+        
+        function rodar() {
+            var tidade = document.getElementById('tidade')
+            var idade = Number(tidade.value)
+
+            if(idade < 16){
+                res.innerHTML ='Não vota'
+                res.style.background = 'red'
+            }else if(idade < 18 || idade > 65){
+                res.innerHTML ='Voto opcional'
+                res.style.background = 'yellow'
+                res.style.color = 'black'
+               } else {
+                res.innerHTML ='Voto obrigatório'
+                res.style.background = 'green'
+                res.style.color = 'white'
+               }
+            }
+    
+    </script>
+</body>
+</html>
