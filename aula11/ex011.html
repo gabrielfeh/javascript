@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qual seu País</title>
+    <title>Qual seu País?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +12,28 @@
         <h1>Vamos ver se você é estrangeiro?</h1>
     </header>
     <main>
-            <h2>Em que país você mora:</h2>
-            <input type="text" name="pais" id="pais">
+            <p>Em que país você mora:</p>
+            <input type="text" name="txt1" id="txt1">
+            <input type="button" value="Enivar" id="sends" onclick="verificar()">
+            <div id="res">
+
+            </div>
 
        </main>
+    
+    <script>
+       
+        function verificar(){
+            console.log('olá')
+            var pais = document.getElementById('txt1').value
+            if (pais == 'brasil'){
+              res.innerHTML = `<p>Você mora no ${pais}, então você é Brasileiro!</p>`
+            } else {
+               res.innerHTML = `<p>Você mora no ${pais}, então você é estrangeiro!</p>`
+            }
+        }
 
+    </script>   
     
 </body>
 </html>

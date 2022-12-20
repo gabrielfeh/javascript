@@ -7,22 +7,32 @@
 }
 html{
     margin: auto;
-    width: 600px;
-    height: 400px;
+    width:100vh;
+    background: url(img/pexels-miguel-á-padriñán-255379.jpg) no-repeat center center;
+    
 }
 header{
     padding:20px ;
-    background: black;
+    width: 100vh;
+    background: rgb(70, 174, 229);
     color: white;
     text-align: center;
+    border-radius: 7px 7px 0px 0px;
 }
 
 main{
     padding: 20px;
-    background:green;
-    width: 560px;
+    background:rgb(255, 255, 255);
+    width: 100vh;
     height: 400px;
+    border-radius: 0px 0px 7px 7px;
 }
 input#pais{
     margin-left: 10px;
+}
+#res{
+    margin-top: 10px;
+}
+input{
+    margin-top: 10px;
 }
