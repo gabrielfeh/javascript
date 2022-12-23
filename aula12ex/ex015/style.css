@@ -8,10 +8,18 @@ body{
     background: rgb(64, 166, 221);
     font: normal 15px Arial;
 }
+p{
+   padding: 10px; 
+}
+
+input#fem{
+    margin-left: 10px;
+}
 
 header{
     color: white;
     text-align: center;
+    margin: 20px;
 }
 
 section{
