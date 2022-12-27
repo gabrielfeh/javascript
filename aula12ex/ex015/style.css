@@ -31,6 +31,11 @@ section{
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.46);
 }
 
+#res > img{
+    display: block;
+    margin: auto;
+}
+
 footer{
     font-style: italic;
     text-align: center;
