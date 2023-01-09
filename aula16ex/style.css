@@ -19,6 +19,15 @@ section{
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.46);
 }
 
+#dados > p{
+    display: inline-block;
+}
+
+select#flista{
+    width: 200px;
+    margin-top: 10px;
+}
+
 footer{
     font-style: italic;
     text-align: center;
